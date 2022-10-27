@@ -29,6 +29,7 @@ class PeopleTableSeeder extends Seeder
         $c2->address= "Ferryside 19 too";
         $c2->save();
 
-//        .\App\Models\Person::factory(50) ->create();//
+        // do a 50 count seeder
+        Person::factory(50) ->create();
     }
 }
